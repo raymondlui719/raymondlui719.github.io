@@ -272,7 +272,7 @@ div#activities {
 	display: inline-block;
 }
 .contact-form input[type="text"].email {
-	margin: 3em 0 1em 1.5em;
+	margin: 3em 0 1em 1em;
 }
 .contact-form input[type="text"].phone {
 	width: 100%;
@@ -356,12 +356,12 @@ div#activities {
 		min-height: 220px;
 	}
 	.contact-form input[type="text"] {
-		width: 46%;
+		width: 47%;
 	}
 }
 
 /** media queries - xs **/
-@media(max-width: 768px) {
+@media(max-width: 767px) {
 	#about {
 		padding: 20px 20px;
 	}
@@ -390,7 +390,7 @@ div#activities {
 		min-height: 25em;
 	}
 	.contact-form input[type="text"] {
-		width: 47.5%;
+		width: 48%;
 	}
 }
 
@@ -409,7 +409,7 @@ div#activities {
 		min-height: 300px;
 	}
 	.contact-form input[type="text"] {
-		width: 46.5%;
+		width: 47.3%;
 	}
 }
 
@@ -420,7 +420,13 @@ div#activities {
 	}	
 }
 
-@media(max-width: 440px) {
+@media(max-width: 464px) {
+	.contact-form input[type="text"] {
+		width: 100%;
+	}
+	.contact-form input[type="text"].email {
+		margin: 10px 0 10px 0;
+	}
 	#education h2 {
 		margin-bottom: 10px;
 	}
