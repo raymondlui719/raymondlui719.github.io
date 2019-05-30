@@ -61,7 +61,10 @@
     "posterImage": "https://raymondlui719.github.io/img/ticket/tokyo_metro_pass_poster.jpg",
     "types": [
       {
-        "name": "24 Hour",
+        "name": {
+          "en": "24 Hour",
+          "zh": "24小時"
+        },
         "image": "https://raymondlui719.github.io/img/ticket/tokyo_metro_pass_24hr.png",
         "price": {
           "adult": 56,
@@ -70,7 +73,10 @@
         "validityHour": 24
       },
       {
-        "name": "48 Hour",
+        "name": {
+          "en": "48 Hour",
+          "zh": "48小時"
+        },
         "image": "https://raymondlui719.github.io/img/ticket/tokyo_metro_pass_48hr.jpg",
         "price": {
           "adult": 83,
@@ -79,7 +85,10 @@
         "validityHour": 48
       },
       {
-        "name": "72 Hour",
+        "name": {
+          "en": "72 Hour",
+          "zh": "72小時"
+        },
         "image": "https://raymondlui719.github.io/img/ticket/tokyo_metro_pass_72hr.jpg",
         "price": {
           "adult": 105,
