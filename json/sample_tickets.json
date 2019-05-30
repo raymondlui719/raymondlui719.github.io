@@ -1,0 +1,97 @@
+[
+  {
+    "id": 1,
+    "key": "TICKET_MTR_CITY_SAVER",
+    "name": {
+      "en": "MTR CITY SAVER",
+      "zh": "港鐵都會票"
+    },
+    "description": {
+      "zh": "覆蓋63個市區車站\n40日內搭40程只需$435",
+      "en": "Valid for 40 single journeys in 40 days for just $435\nCovering 63 urban stations"
+    },
+    "posterImage": "https://media.karousell.com/media/photos/products/2017/08/10/419_1502371931_82e069fd.jpg",
+    "types": [
+      {
+        "name": null,
+        "image": "https://media.karousell.com/media/photos/products/2017/08/10/419_1502371931_82e069fd.jpg",
+        "price": {
+          "adult": 435,
+          "child": 435
+        },
+        "validityHour": 960
+      }
+    ],
+    "availableArea": {
+      "lines": [
+        "333",
+        "2867",
+        "337",
+        "334",
+        "337"
+      ],
+      "stations": [
+        "415",
+        "382",
+        "385",
+        "364",
+        "359",
+        "364",
+        "413",
+        "341",
+        "351",
+        "360",
+        "380",
+        "366"
+      ],
+      "carTypes": []
+    }
+  },
+  {
+    "id": 2,
+    "key": "TICKET_TOKYO_METRO",
+    "name": {
+      "en": "Tokyo Subway Ticket",
+      "zh": "東京交通票券"
+    },
+    "description": {
+      "zh": "透過 KKday 預先購買日本東京地鐵乘車券（Tokyo Subway Ticket），任選 24 / 48 / 72 小時的配套，無限次乘搭東京 Metro 地鐵與都營地下鐵全線，輕鬆享受自由行的樂趣，另提供關西 / 成田機場 / 原宿 等 JTR 櫃檯領取服務，讓你以經濟實惠的票價輕鬆玩遍全東京，感受日本首都獨有的城市魅力！",
+      "en": "Starting Friday, January 11, Tokyo Metro will offer \"Tokyo Subway Tickets\" for purchase by foreign visitors to Japan at select YAMADA DENKI locations in Tokyo!"
+    },
+    "posterImage": "https://www.tokyometro.jp/lang_en/news/images_h/metroNews20190107_01pic1.jpg",
+    "types": [
+      {
+        "name": "24 Hour",
+        "image": "https://www.tokyometro.jp/lang_en/ticket/value/ticket_otoku05.png",
+        "price": {
+          "adult": 56,
+          "child": 56
+        },
+        "validityHour": 24
+      },
+      {
+        "name": "48 Hour",
+        "image": "https://www.tokyometro.jp/lang_en/ticket/value/ticket_otoku05.png",
+        "price": {
+          "adult": 83,
+          "child": 83
+        },
+        "validityHour": 48
+      },
+      {
+        "name": "72 Hour",
+        "image": "https://www.tokyometro.jp/lang_en/ticket/value/ticket_otoku05.png",
+        "price": {
+          "adult": 105,
+          "child": 105
+        },
+        "validityHour": 72
+      }
+    ],
+    "availableArea": {
+      "lines": [],
+      "stations": [],
+      "carTypes": []
+    }
+  }
+]
