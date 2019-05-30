@@ -102,5 +102,38 @@
       "stations": [],
       "carTypes": []
     }
+  },
+  {
+    "id": 3,
+    "key": "TICKET_MONTHLY_PASS_EXTRA_WEST_RAIL_LINE_HUNG_HOM",
+    "name": {
+      "en": "Monthly Pass Extra(West Rail Line)(Tuen Mun - Hung Hom)",
+      "zh": "全月通加強版(西鐵綫)(屯門 - 紅磡)"
+    },
+    "description": {
+      "zh": "「全月通加強版」共有五款，乘客除可於有效月份內無限次往來指定車站外，連接非指定車站的車程，更可享正價車費75折*優惠。請按此了解「全月通加強版」如何讓你節省更多。",
+      "en": "Five types of Monthly Pass Extra are available. With the Monthly Pass Extra, not only will you enjoy unlimited rides between designated stations within the valid month, you will also get a 25% discount* off the normal fare for journeys connecting to or from non-designated stations. To get to know how you can save more from using the Monthly Pass Extra, click here for more examples on fare savings."
+    },
+    "posterImage": "http://www.mtr.com.hk/ch/customer/images/octopus_card.jpg",
+    "types": [
+      {
+        "name": null,
+        "image": null,
+        "price": {
+          "adult": 600,
+          "child": 600
+        },
+        "validityHour": 720
+      }
+    ],
+    "availableArea": {
+      "lines": [
+        "339"
+      ],
+      "stations": [
+      ],
+      "carTypes": [
+      ]
+    }
   }
 ]
