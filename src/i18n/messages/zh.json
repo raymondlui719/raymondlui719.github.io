@@ -15,5 +15,18 @@
     "skills": "技能",
     "hobbies": "興趣",
     "contact": "與我聯絡"
+  },
+  "ContactForm": {
+    "fullName": "姓名",
+    "fullNamePlaceholder": "請輸入您的姓名",
+    "email": "電郵",
+    "emailPlaceholder": "請輸入您的電郵",
+    "message": "訊息",
+    "messagePlaceholder": "請輸入您的訊息",
+    "submit": "提交",
+    "successTitle": "感謝您!",
+    "successMessage": "已經收到您的訊息，我會盡快回覆您。",
+    "errorTitle": "發生錯誤",
+    "errorMessage": "請稍後再試"
   }
 }

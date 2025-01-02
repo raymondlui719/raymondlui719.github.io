@@ -4,6 +4,7 @@ import "../globals.css";
 import { getMessages, getTranslations, supportedLocales } from "@/i18n";
 import { ThemeProvider } from "@/components/theme-provider";
 import { IntlProvider } from "@/components/intl-provider";
+import { Toaster } from "@/components/ui/toaster";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -46,6 +47,7 @@ export default async function RootLayout(props: RootLayoutProps) {
             {children}
           </IntlProvider>
         </ThemeProvider>
+        <Toaster />
       </body>
     </html>
   );

@@ -15,5 +15,18 @@
     "skills": "Skills",
     "hobbies": "Hobbies",
     "contact": "Contact"
+  },
+  "ContactForm": {
+    "fullName": "Your name",
+    "fullNamePlaceholder": "Enter your full name here",
+    "email": "Your email",
+    "emailPlaceholder": "Enter your email address here",
+    "message": "Message",
+    "messagePlaceholder": "Enter your message here",
+    "submit": "Submit",
+    "successTitle": "Thank you!",
+    "successMessage": "I have received your message. I will get back to you soon.",
+    "errorTitle": "Oops! Something went wrong.",
+    "errorMessage": "Please try again later."
   }
 }

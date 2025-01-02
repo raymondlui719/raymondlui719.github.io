@@ -15,5 +15,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Dependencies
 
 - [Next.js](https://nextjs.org)
+- [React](https://react.dev/)
+- [Typescript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Next Intl](https://next-intl.dev/)
+- [Lucide Icons](https://lucide.dev/)
+- [Formcarry](https://formcarry.com/)
