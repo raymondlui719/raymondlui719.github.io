@@ -1,5 +1,6 @@
 import { ContactForm } from "@/components/contact-form";
 import { Footer } from "@/components/footer";
+import { HeroSection } from "@/components/hero-section";
 import { Navbar } from "@/components/navbar";
 import { ThemeToggleButton } from "@/components/theme-toggle-button";
 import { getTranslations } from "@/i18n";
@@ -22,6 +23,7 @@ const MainPage = async (props: PageProps) => {
       <main className="flex min-h-screen flex-col">
         <div className="container mx-auto">
           <div className="mx-auto w-11/12">
+            <HeroSection />
             <ContactForm />
           </div>
         </div>
