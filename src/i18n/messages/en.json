@@ -2,5 +2,11 @@
   "Index": {
     "title": "Raymond Lui",
     "description": "Welcome to Raymond Lui's Portfolio!"
+  },
+  "Theme": {
+    "toggle": "Toggle Theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
   }
 }

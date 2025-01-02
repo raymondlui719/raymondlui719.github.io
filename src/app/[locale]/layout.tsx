@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
-import { getTranslations, supportedLocales } from "@/i18n";
+import { getMessages, getTranslations, supportedLocales } from "@/i18n";
+import { ThemeProvider } from "@/components/theme-provider";
+import { IntlProvider } from "@/components/intl-provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,28 +28,35 @@ interface RootLayoutProps {
 
 export default async function RootLayout(props: RootLayoutProps) {
   const params = await props.params;
-
-  const {
-    children
-  } = props;
+  const { children } = props;
+  const messages = await getMessages(params.locale);
 
   return (
-    <html lang={params.locale}>
+    <html lang={params.locale} suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <IntlProvider locale={params.locale} messages={messages}>
+            {children}
+          </IntlProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
 }
 
-export async function generateMetadata(props: RootLayoutProps): Promise<Metadata> {
+export async function generateMetadata(
+  props: RootLayoutProps
+): Promise<Metadata> {
   const params = await props.params;
 
-  const {
-    locale
-  } = params;
+  const { locale } = params;
 
   const t = await getTranslations({ locale });
   return {

@@ -2,5 +2,11 @@
   "Index": {
     "title": "Raymond Lui",
     "description": "歡迎來到 Raymond Lui 的個人網站!"
+  },
+  "Theme": {
+    "toggle": "切換主題",
+    "light": "明亮",
+    "dark": "暗黑",
+    "system": "系統"
   }
 }

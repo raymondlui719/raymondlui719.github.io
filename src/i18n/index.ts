@@ -9,13 +9,17 @@ export const supportedLocales = ["en", "zh"];
 
 export const defaultLocale = "en";
 
+export const getMessages = async (locale: TranslatorOptions["locale"]) => {
+  const messages = await import(`@/i18n/messages/${locale}.json`);
+  return messages.default;
+};
+
 export const getTranslations = async (config: TranslatorOptions) => {
   const { locale } = config;
-  const messagesModule = await import(`@/i18n/messages/${locale}.json`);
 
   const translator = createTranslator({
     locale,
-    messages: messagesModule.default,
+    messages: await getMessages(locale),
   });
 
   return translator;
