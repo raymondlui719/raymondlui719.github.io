@@ -13,7 +13,11 @@ export function IntlProvider({
   messages: Record<string, string>;
 }) {
   return (
-    <NextIntlClientProvider locale={locale} messages={messages}>
+    <NextIntlClientProvider
+      locale={locale}
+      messages={messages}
+      timeZone="Asia/Hong_Kong"
+    >
       {children}
     </NextIntlClientProvider>
   );
