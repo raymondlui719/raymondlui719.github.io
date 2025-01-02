@@ -30,7 +30,7 @@ export function Navbar({ t }: { t: Translator }) {
   return (
     <header
       id="navbar"
-      className="flex h-20 w-full shrink-0 items-center px-4 md:px-6 bg-white dark:bg-gray-950"
+      className="flex h-20 w-full shrink-0 items-center px-4 md:px-6 bg-background"
     >
       <Sheet>
         <SheetTrigger asChild>
