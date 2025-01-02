@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Menu } from "lucide-react";
+import { LuMenu } from "react-icons/lu";
 import { ThemeToggleButton } from "./theme-toggle-button";
 import { Translator } from "@/i18n";
 import { cn } from "@/lib/utils";
@@ -30,12 +30,12 @@ export function Navbar({ t }: { t: Translator }) {
   return (
     <header
       id="navbar"
-      className="flex h-20 w-full shrink-0 items-center px-4 md:px-6 bg-background"
+      className="flex h-20 w-full shrink-0 items-center bg-background px-4 md:px-6"
     >
       <Sheet>
         <SheetTrigger asChild>
           <Button variant="outline" size="icon" className="md:hidden">
-            <Menu className="h-6 w-6" />
+            <LuMenu className="h-6 w-6" />
             <span className="sr-only">Toggle navigation menu</span>
           </Button>
         </SheetTrigger>
@@ -65,7 +65,7 @@ export function Navbar({ t }: { t: Translator }) {
       <NavLink href="#navbar" className="text-lg font-semibold">
         {t("Index.title")}
       </NavLink>
-      <nav className="ml-auto gap-6 flex">
+      <nav className="ml-auto flex gap-6">
         {links.map((link) => (
           <NavLink key={link.href} href={link.href} className="hidden md:block">
             {link.title}

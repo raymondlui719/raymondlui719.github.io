@@ -16,6 +16,9 @@
     "hobbies": "Hobbies",
     "contact": "Contact"
   },
+  "Footer": {
+    "copyright": "Copyright © {year} {name}. All rights reserved."
+  },
   "ContactForm": {
     "fullName": "Your name",
     "fullNamePlaceholder": "Enter your full name here",

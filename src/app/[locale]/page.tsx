@@ -1,4 +1,5 @@
 import { ContactForm } from "@/components/contact-form";
+import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
 import { ThemeToggleButton } from "@/components/theme-toggle-button";
 import { getTranslations } from "@/i18n";
@@ -18,13 +19,14 @@ const MainPage = async (props: PageProps) => {
   return (
     <>
       <Navbar t={t} />
-      <main>
+      <main className="flex min-h-screen flex-col">
         <div className="container mx-auto">
-          <div className="w-11/12 mx-auto">
+          <div className="mx-auto w-11/12">
             <ContactForm />
           </div>
         </div>
       </main>
+      <Footer t={t} />
     </>
   );
 };

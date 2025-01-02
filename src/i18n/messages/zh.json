@@ -16,6 +16,9 @@
     "hobbies": "興趣",
     "contact": "與我聯絡"
   },
+  "Footer": {
+    "copyright": "Copyright © {year} {name}. 版權所有"
+  },
   "ContactForm": {
     "fullName": "姓名",
     "fullNamePlaceholder": "請輸入您的姓名",
