@@ -24,3 +24,5 @@ export const getTranslations = async (config: TranslatorOptions) => {
 
   return translator;
 };
+
+export type Translator = Awaited<ReturnType<typeof getTranslations>>;

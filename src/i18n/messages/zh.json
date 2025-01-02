@@ -8,5 +8,12 @@
     "light": "明亮",
     "dark": "暗黑",
     "system": "系統"
+  },
+  "Navbar": {
+    "about": "關於",
+    "experience": "工作經驗",
+    "skills": "技能",
+    "hobbies": "興趣",
+    "contact": "與我聯絡"
   }
 }

@@ -8,5 +8,12 @@
     "light": "Light",
     "dark": "Dark",
     "system": "System"
+  },
+  "Navbar": {
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "hobbies": "Hobbies",
+    "contact": "Contact"
   }
 }

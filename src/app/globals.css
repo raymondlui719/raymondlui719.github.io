@@ -61,7 +61,6 @@
 
 @layer utilities {
   .shadow-sm {
-    /* todo: cleanup css */
     @apply shadow-none;
   }
 }
@@ -73,4 +72,8 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+* {
+  scroll-behavior: smooth;
 }
