@@ -52,7 +52,7 @@ export default async function RootLayout(props: RootLayoutProps) {
 }
 
 export async function generateMetadata(
-  props: RootLayoutProps
+  props: RootLayoutProps,
 ): Promise<Metadata> {
   const params = await props.params;
 
