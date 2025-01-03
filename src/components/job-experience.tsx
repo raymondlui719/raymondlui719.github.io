@@ -127,7 +127,7 @@ export function JobExperience() {
           const backgroundColor = isEven ? "hsl(var(--primary))" : "hsl(var(--secondary))";
           return (
             <VerticalTimelineElement
-              className=""
+              key={`vertical-timeline-element-${index}`}
               contentStyle={{ background: backgroundColor, color: "#fff", boxShadow: "none" }}
               contentArrowStyle={{ borderRight: `7px solid ${backgroundColor}` }}
               date={item.date}
