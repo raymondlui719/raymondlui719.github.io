@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Sheet,
   SheetTrigger,
@@ -10,16 +12,20 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { LuMenu } from "react-icons/lu";
 import { ThemeToggleButton } from "./theme-toggle-button";
-import { Translator } from "@/i18n";
 import { cn } from "@/lib/utils";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
+import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 type NavbarLink = {
   href: string;
   title: string;
 };
 
-export function Navbar({ t }: { t: Translator }) {
+export function Navbar() {
+  const t = useTranslations();
+  const [open, setOpen] = useState(false);
+
   const links: NavbarLink[] = [
     { href: "#about", title: t("Navbar.about") },
     { href: "#experience", title: t("Navbar.experience") },
@@ -30,19 +36,19 @@ export function Navbar({ t }: { t: Translator }) {
   return (
     <header
       id="navbar"
-      className="flex h-20 w-full shrink-0 items-center bg-background px-4 md:px-6"
+      className="sticky top-0 z-10 flex h-20 w-full shrink-0 items-center bg-background px-4 md:px-6"
     >
-      <Sheet>
+      <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger asChild>
           <Button variant="outline" size="icon" className="md:hidden">
             <LuMenu className="h-6 w-6" />
             <span className="sr-only">Toggle navigation menu</span>
           </Button>
         </SheetTrigger>
-        <SheetContent side="left">
+        <SheetContent side="left" onCloseAutoFocus={(event) => event.preventDefault()}>
           <SheetHeader>
             <Link href="#navbar" className="mr-6" prefetch={false}>
-              <SheetTitle>{t("Index.title")}</SheetTitle>
+              <SheetTitle className="text-start">{t("Index.title")}</SheetTitle>
             </Link>
             <VisuallyHidden>
               <SheetDescription>Drawer</SheetDescription>
@@ -55,6 +61,7 @@ export function Navbar({ t }: { t: Translator }) {
                 href={link.href}
                 className="flex w-full items-center py-2 text-lg font-semibold"
                 prefetch={false}
+                onClick={() => setOpen(false)}
               >
                 {link.title}
               </Link>

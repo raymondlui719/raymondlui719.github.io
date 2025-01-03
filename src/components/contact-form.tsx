@@ -79,60 +79,53 @@ export function ContactForm() {
   };
 
   return (
-    <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-        <FormField
-          control={form.control}
-          name="fullName"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>{t("ContactForm.fullName")}</FormLabel>
-              <FormControl>
-                <Input
-                  placeholder={t("ContactForm.fullNamePlaceholder")}
-                  {...field}
-                />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="email"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>{t("ContactForm.email")}</FormLabel>
-              <FormControl>
-                <Input
-                  placeholder={t("ContactForm.emailPlaceholder")}
-                  {...field}
-                />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="message"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>{t("ContactForm.message")}</FormLabel>
-              <FormControl>
-                <Textarea
-                  placeholder={t("ContactForm.messagePlaceholder")}
-                  {...field}
-                />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <Button type="submit" className="w-full" loading={isSubmitting}>
-          {t("ContactForm.submit")}
-        </Button>
-      </form>
-    </Form>
+    <div id="contact" className="scroll-mt-20">
+      <Form {...form}>
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+          <FormField
+            control={form.control}
+            name="fullName"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>{t("ContactForm.fullName")}</FormLabel>
+                <FormControl>
+                  <Input placeholder={t("ContactForm.fullNamePlaceholder")} {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="email"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>{t("ContactForm.email")}</FormLabel>
+                <FormControl>
+                  <Input placeholder={t("ContactForm.emailPlaceholder")} {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="message"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>{t("ContactForm.message")}</FormLabel>
+                <FormControl>
+                  <Textarea placeholder={t("ContactForm.messagePlaceholder")} {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <Button type="submit" className="w-full" loading={isSubmitting}>
+            {t("ContactForm.submit")}
+          </Button>
+        </form>
+      </Form>
+    </div>
   );
 }

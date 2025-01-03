@@ -108,7 +108,10 @@ export function JobExperience() {
     },
   ];
   return (
-    <div id="experience" className="flex flex-col items-center">
+    <div
+      id="experience"
+      className="mt-8 flex scroll-mt-28 flex-col items-center sm:mt-0 sm:scroll-mt-20"
+    >
       <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
         Work Experience & Education
       </h3>

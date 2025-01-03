@@ -18,7 +18,7 @@ const MainPage = async (props: PageProps) => {
 
   return (
     <>
-      <Navbar t={t} />
+      <Navbar />
       <main className="flex min-h-screen flex-col">
         <div className="container mx-auto">
           <div className="mx-auto w-11/12">

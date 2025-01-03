@@ -33,7 +33,7 @@ export default async function RootLayout(props: RootLayoutProps) {
   const messages = await getMessages(params.locale);
 
   return (
-    <html lang={params.locale} suppressHydrationWarning>
+    <html lang={params.locale} suppressHydrationWarning className="scroll-smooth">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <ThemeProvider
           attribute="class"
