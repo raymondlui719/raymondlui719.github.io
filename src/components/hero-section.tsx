@@ -12,13 +12,18 @@ const LottieView = dynamic(() => import("./ui/lottie"), { ssr: false });
 export function HeroSection() {
   const t = useTranslations();
   return (
-    <section className="lg:py-16">
-      <div className="grid grid-cols-1 sm:grid-cols-12">
+    <section
+      className="flex flex-row items-center lg:py-16"
+      style={{
+        minHeight: "calc(100vh - 5rem)",
+      }}
+    >
+      <div className="my-auto grid grid-cols-1 sm:grid-cols-12">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="col-span-8 place-self-center justify-self-start text-center sm:text-left"
+          className="order-2 col-span-8 place-self-center justify-self-start text-center sm:order-1 sm:text-left"
         >
           <h1 className="mb-4 text-3xl font-extrabold text-foreground sm:text-4xl lg:text-6xl lg:leading-normal">
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
@@ -68,7 +73,7 @@ export function HeroSection() {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="col-span-4 mt-4 place-self-center lg:mt-0"
+          className="order-1 col-span-4 mb-8 mt-4 max-w-80 place-self-center sm:order-2 lg:mb-0 lg:mt-0"
         >
           <div className="relative h-full w-full rounded-full bg-accent">
             <LottieView />
