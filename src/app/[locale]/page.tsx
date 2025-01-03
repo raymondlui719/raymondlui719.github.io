@@ -1,3 +1,4 @@
+import { AboutMeSection } from "@/components/about-me";
 import { ContactMeSection } from "@/components/contact-form";
 import { ExperienceAndEducationSection } from "@/components/experience-and-education";
 import { Footer } from "@/components/footer";
@@ -23,6 +24,7 @@ const MainPage = async (props: PageProps) => {
         <div className="container mx-auto">
           <div className="mx-auto w-11/12">
             <HeroSection />
+            <AboutMeSection />
             <ExperienceAndEducationSection />
             <ContactMeSection />
           </div>

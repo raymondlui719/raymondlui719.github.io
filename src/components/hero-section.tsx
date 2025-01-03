@@ -24,7 +24,7 @@ export function HeroSection() {
           transition={{ duration: 0.5 }}
           className="order-2 col-span-8 place-self-center justify-self-start text-center sm:order-1 sm:text-left"
         >
-          <h1 className="mb-4 text-3xl font-extrabold text-foreground sm:text-4xl lg:text-6xl lg:leading-normal">
+          <h1 className="mb-4 text-3xl font-extrabold text-foreground sm:text-4xl lg:text-5xl lg:leading-normal">
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               {t("HeroSection.Hello")}
             </span>

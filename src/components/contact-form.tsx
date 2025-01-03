@@ -81,7 +81,7 @@ export function ContactMeSection() {
   };
 
   return (
-    <div id="contact" className="grid scroll-mt-20 gap-4 py-24 md:grid-cols-2">
+    <section id="contact" className="grid scroll-mt-20 gap-4 py-24 md:grid-cols-2">
       <div className="z-10">
         <h5 className="my-2 text-xl font-bold text-foreground">Let's Connect</h5>
         <p className="mb-4 max-w-md text-muted-foreground">
@@ -146,6 +146,6 @@ export function ContactMeSection() {
           </Button>
         </form>
       </Form>
-    </div>
+    </section>
   );
 }
