@@ -2,9 +2,7 @@ import { ContactForm } from "@/components/contact-form";
 import { Footer } from "@/components/footer";
 import { HeroSection } from "@/components/hero-section";
 import { Navbar } from "@/components/navbar";
-import { ThemeToggleButton } from "@/components/theme-toggle-button";
 import { getTranslations } from "@/i18n";
-import Image from "next/image";
 
 interface PageProps {
   params: Promise<{ locale: string }>;

@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { useLottie, LottieOptions } from "lottie-react";
 import { motion } from "framer-motion";
@@ -33,7 +32,7 @@ export function HeroSection() {
             <TypeAnimation
               sequence={[
                 "Raymond Lui",
-                1000,
+                2000,
                 "Software Engineer",
                 1000,
                 "Mobile Developer",
@@ -51,21 +50,22 @@ export function HeroSection() {
           <p className="mb-6 text-base text-foreground/80 sm:text-lg lg:text-xl">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptuous.
           </p>
-          <div>
+          <div className="flex flex-row flex-wrap gap-3">
             <Link
-              href="/#contact"
-              className="mr-4 inline-block w-full rounded-full bg-gradient-to-br from-primary to-secondary px-6 py-3 text-white hover:bg-slate-200 sm:w-fit"
+              href="#contact"
+              className="inline-block flex-grow rounded-full bg-gradient-to-br from-primary to-secondary px-6 py-3 text-white hover:bg-slate-200 sm:flex-grow-0"
             >
               Hire Me
             </Link>
-            <Link
-              href="/"
-              className="mt-3 inline-block w-full rounded-full bg-gradient-to-br from-primary to-secondary px-1 py-1 text-foreground hover:bg-slate-800 sm:w-fit"
+            <a
+              href="/pdf/CV_Raymond_Lui.pdf"
+              download="CV_Raymond_Lui.pdf"
+              className="inline-block flex-grow rounded-full bg-gradient-to-br from-primary to-secondary px-1 py-1 text-foreground hover:bg-slate-800 sm:flex-grow-0"
             >
               <span className="block rounded-full bg-accent px-5 py-2 hover:bg-accent/80">
                 Download CV
               </span>
-            </Link>
+            </a>
           </div>
         </motion.div>
         <motion.div
@@ -74,7 +74,7 @@ export function HeroSection() {
           transition={{ duration: 0.5 }}
           className="col-span-4 mt-4 place-self-center lg:mt-0"
         >
-          <div className="relative h-[250px] w-[250px] rounded-full bg-accent lg:h-[400px] lg:w-[400px]">
+          <div className="relative h-[16rem] w-[16rem] rounded-full bg-accent lg:h-[25rem] lg:w-[25rem]">
             {LottieView}
           </div>
         </motion.div>
