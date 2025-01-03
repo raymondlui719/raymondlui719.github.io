@@ -1,4 +1,4 @@
-import { ContactForm } from "@/components/contact-form";
+import { ContactMeSection } from "@/components/contact-form";
 import { Footer } from "@/components/footer";
 import { HeroSection } from "@/components/hero-section";
 import { JobExperience } from "@/components/job-experience";
@@ -24,7 +24,7 @@ const MainPage = async (props: PageProps) => {
           <div className="mx-auto w-11/12">
             <HeroSection />
             <JobExperience />
-            <ContactForm />
+            <ContactMeSection />
           </div>
         </div>
       </main>

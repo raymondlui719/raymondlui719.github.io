@@ -120,7 +120,7 @@ export function JobExperience() {
         animate={true}
         layout="2-columns"
         lineColor="hsl(var(--border))"
-        className="!mt-3"
+        className="!mt-3 !pb-0"
       >
         {items.map((item, index) => {
           const isEven = index % 2 === 0;
