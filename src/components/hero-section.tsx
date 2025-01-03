@@ -2,19 +2,13 @@
 
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-import { useLottie, LottieOptions } from "lottie-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import heroAnimation from "@/animations/swe-animation.json";
+import dynamic from "next/dynamic";
 
-const animationOptions: LottieOptions<"svg"> = {
-  animationData: heroAnimation,
-  loop: true,
-  autoplay: true,
-};
+const LottieView = dynamic(() => import("./ui/lottie"), { ssr: false });
 
 export function HeroSection() {
-  const { View: LottieView } = useLottie(animationOptions);
   return (
     <section className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -75,7 +69,7 @@ export function HeroSection() {
           className="col-span-4 mt-4 place-self-center lg:mt-0"
         >
           <div className="relative h-[16rem] w-[16rem] rounded-full bg-accent lg:h-[25rem] lg:w-[25rem]">
-            {LottieView}
+            <LottieView />
           </div>
         </motion.div>
       </div>
