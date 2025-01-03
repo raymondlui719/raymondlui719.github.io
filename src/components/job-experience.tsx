@@ -1,9 +1,9 @@
 "use client";
 
+import React from "react";
+import { LuBriefcaseBusiness, LuSchool, LuStar } from "react-icons/lu";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { LuSchool, LuBriefcaseBusiness, LuStar } from "react-icons/lu";
-import React from "react";
 
 interface ExperienceItem {
   date: string;

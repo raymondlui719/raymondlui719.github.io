@@ -1,7 +1,7 @@
 import { Translator } from "@/i18n";
+import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import { LuMail } from "react-icons/lu";
-import Link from "next/link";
 
 export function Footer({ t }: { t: Translator }) {
   const year = new Date().getFullYear();

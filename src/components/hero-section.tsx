@@ -1,11 +1,10 @@
 "use client";
 
-import React from "react";
-import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import dynamic from "next/dynamic";
 import { useTranslations } from "next-intl";
+import dynamic from "next/dynamic";
+import Link from "next/link";
+import { TypeAnimation } from "react-type-animation";
 
 const LottieView = dynamic(() => import("./ui/lottie"), { ssr: false });
 

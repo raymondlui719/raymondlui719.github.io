@@ -8,7 +8,7 @@ const prettierConfig = {
   singleQuote: false,
   printWidth: 100,
   tabWidth: 2,
-  plugins: ["prettier-plugin-tailwindcss"],
+  plugins: ["prettier-plugin-organize-imports", "prettier-plugin-tailwindcss"],
 };
 
 export default prettierConfig;

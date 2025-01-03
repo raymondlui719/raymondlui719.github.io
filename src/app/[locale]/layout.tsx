@@ -1,10 +1,10 @@
+import { IntlProvider } from "@/components/intl-provider";
+import { ThemeProvider } from "@/components/theme-provider";
+import { Toaster } from "@/components/ui/toaster";
+import { getMessages, getTranslations, supportedLocales } from "@/i18n";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
-import { getMessages, getTranslations, supportedLocales } from "@/i18n";
-import { ThemeProvider } from "@/components/theme-provider";
-import { IntlProvider } from "@/components/intl-provider";
-import { Toaster } from "@/components/ui/toaster";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

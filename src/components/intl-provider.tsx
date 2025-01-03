@@ -1,7 +1,7 @@
 "use client";
 
-import * as React from "react";
 import { NextIntlClientProvider } from "next-intl";
+import * as React from "react";
 
 export function IntlProvider({
   children,
@@ -13,11 +13,7 @@ export function IntlProvider({
   messages: Record<string, string>;
 }) {
   return (
-    <NextIntlClientProvider
-      locale={locale}
-      messages={messages}
-      timeZone="Asia/Hong_Kong"
-    >
+    <NextIntlClientProvider locale={locale} messages={messages} timeZone="Asia/Hong_Kong">
       {children}
     </NextIntlClientProvider>
   );
