@@ -16,8 +16,18 @@
     "hobbies": "興趣",
     "contact": "與我聯絡"
   },
+  "HeroSection": {
+    "Hello": "您好，我係",
+    "softwareEngineer": "軟件工程師",
+    "mobileDeveloper": "手機程式開發員",
+    "webDeveloper": "網頁開發者",
+    "backendDeveloper": "後端工程師",
+    "summary": "我係Raymond Lui，一位資深軟件工程師，專注於設計、開發和維護複雜的手機應用程式、網站和後端伺服器。",
+    "hireMe": "與我聯絡",
+    "downloadCV": "下載履歷"
+  },
   "Footer": {
-    "copyright": "Copyright © {year} {name}. 版權所有"
+    "copyright": "© {year} / {name} / 版權所有"
   },
   "ContactForm": {
     "fullName": "姓名",

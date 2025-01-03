@@ -16,8 +16,18 @@
     "hobbies": "Hobbies",
     "contact": "Contact"
   },
+  "HeroSection": {
+    "Hello": "Hello, I'm",
+    "softwareEngineer": "a Software Engineer",
+    "mobileDeveloper": "a Mobile Developer",
+    "webDeveloper": "a Web Developer",
+    "backendDeveloper": "a Backend Developer",
+    "summary": "I am Raymond Lui, a senior software engineer specializing in designing, developing, and maintaining sophisticated mobile applications, websites, and backend applications.",
+    "hireMe": "Hire Me",
+    "downloadCV": "Download CV"
+  },
   "Footer": {
-    "copyright": "Copyright © {year} {name}. All rights reserved."
+    "copyright": "© {year} / {name} / All rights reserved."
   },
   "ContactForm": {
     "fullName": "Your name",
