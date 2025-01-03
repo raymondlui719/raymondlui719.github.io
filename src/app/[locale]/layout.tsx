@@ -34,9 +34,7 @@ export default async function RootLayout(props: RootLayoutProps) {
 
   return (
     <html lang={params.locale} suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -53,9 +51,7 @@ export default async function RootLayout(props: RootLayoutProps) {
   );
 }
 
-export async function generateMetadata(
-  props: RootLayoutProps,
-): Promise<Metadata> {
+export async function generateMetadata(props: RootLayoutProps): Promise<Metadata> {
   const params = await props.params;
 
   const { locale } = params;
