@@ -21,9 +21,13 @@ import { z } from "zod";
 import { Textarea } from "./ui/textarea";
 
 const formSchema = z.object({
-  fullName: z.string(),
+  fullName: z.string().min(1, {
+    message: "Name is required",
+  }),
   email: z.string().email(),
-  message: z.string(),
+  message: z.string().min(1, {
+    message: "Message is required",
+  }),
 });
 
 export function ContactMeSection() {
