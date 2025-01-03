@@ -4,6 +4,7 @@ import { ExperienceAndEducationSection } from "@/components/experience-and-educa
 import { Footer } from "@/components/footer";
 import { HeroSection } from "@/components/hero-section";
 import { Navbar } from "@/components/navbar";
+import { ScrollToTopButton } from "@/components/scroll-to-top-button";
 import { getTranslations } from "@/i18n";
 
 interface PageProps {
@@ -31,6 +32,7 @@ const MainPage = async (props: PageProps) => {
         </div>
       </main>
       <Footer t={t} />
+      <ScrollToTopButton />
     </>
   );
 };
