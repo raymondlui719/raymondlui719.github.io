@@ -119,7 +119,7 @@ export function JobExperience() {
       <VerticalTimeline
         animate={true}
         layout="2-columns"
-        lineColor="hsl(var(--foreground))"
+        lineColor="hsl(var(--border))"
         className="!mt-3"
       >
         {items.map((item, index) => {
@@ -131,7 +131,7 @@ export function JobExperience() {
               contentStyle={{ background: backgroundColor, color: "#fff", boxShadow: "none" }}
               contentArrowStyle={{ borderRight: `7px solid ${backgroundColor}` }}
               date={item.date}
-              dateClassName="text-foreground"
+              dateClassName="text-white vtc:text-foreground"
               iconStyle={{ background: backgroundColor, color: "#fff" }}
               icon={item.icon}
             >

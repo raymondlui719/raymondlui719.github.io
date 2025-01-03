@@ -15,6 +15,8 @@ export default {
       lg: "64rem",
       xl: "80rem",
       "2xl": "96rem",
+      // breakpoint for react-vertical-timeline-component
+      vtc: "1170px",
     },
     extend: {
       colors: {
