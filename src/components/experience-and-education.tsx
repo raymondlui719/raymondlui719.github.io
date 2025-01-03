@@ -14,7 +14,7 @@ interface ExperienceItem {
   icon?: React.ReactNode;
 }
 
-export function JobExperience() {
+export function ExperienceAndEducationSection() {
   const items: ExperienceItem[] = [
     {
       date: "2018 - Present",

@@ -1,7 +1,7 @@
 import { ContactMeSection } from "@/components/contact-form";
+import { ExperienceAndEducationSection } from "@/components/experience-and-education";
 import { Footer } from "@/components/footer";
 import { HeroSection } from "@/components/hero-section";
-import { JobExperience } from "@/components/job-experience";
 import { Navbar } from "@/components/navbar";
 import { getTranslations } from "@/i18n";
 
@@ -23,7 +23,7 @@ const MainPage = async (props: PageProps) => {
         <div className="container mx-auto">
           <div className="mx-auto w-11/12">
             <HeroSection />
-            <JobExperience />
+            <ExperienceAndEducationSection />
             <ContactMeSection />
           </div>
         </div>
