@@ -6,6 +6,7 @@ import { HeroSection } from "@/components/hero-section";
 import { HobbiesSection } from "@/components/hobbies";
 import { Navbar } from "@/components/navbar";
 import { ScrollToTopButton } from "@/components/scroll-to-top-button";
+import { SkillsSection } from "@/components/skills";
 import { getTranslations } from "@/i18n";
 
 interface PageProps {
@@ -28,6 +29,7 @@ const MainPage = async (props: PageProps) => {
             <HeroSection />
             <AboutMeSection />
             <ExperienceAndEducationSection />
+            <SkillsSection />
             <HobbiesSection />
             <ContactMeSection />
           </div>
