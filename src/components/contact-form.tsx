@@ -86,7 +86,7 @@ export function ContactMeSection() {
 
   return (
     <section id="contact" className="grid scroll-mt-20 gap-4 py-24 md:grid-cols-2">
-      <div className="z-10">
+      <div className="z-[1]">
         <h5 className="my-2 text-xl font-bold text-foreground">Let's Connect</h5>
         <p className="mb-4 max-w-md text-muted-foreground">
           I'm currently looking for new opportunities, my inbox is always open. Whether you have a

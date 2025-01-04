@@ -1,14 +1,14 @@
 "use client";
 
 import { NextIntlClientProvider } from "next-intl";
-import * as React from "react";
+import { ReactNode } from "react";
 
 export function IntlProvider({
   children,
   locale,
   messages,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
   locale: string;
   messages: Record<string, string>;
 }) {

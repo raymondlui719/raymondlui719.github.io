@@ -12,12 +12,12 @@ export function HeroSection() {
   const t = useTranslations();
   return (
     <section
-      className="flex flex-row items-center lg:py-16"
+      className="flex flex-row items-center justify-center lg:py-16"
       style={{
         minHeight: "calc(100vh - 5rem)",
       }}
     >
-      <div className="my-auto grid grid-cols-1 sm:grid-cols-12">
+      <div className="grid grid-cols-1 sm:grid-cols-12">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
