@@ -36,7 +36,7 @@ export function Navbar() {
   return (
     <header
       id="navbar"
-      className="sticky top-0 z-10 flex h-20 w-full shrink-0 items-center bg-background px-4 md:px-6"
+      className="sticky top-0 z-10 flex h-20 w-full shrink-0 items-center border-b border-border bg-background/30 px-4 backdrop-blur-lg backdrop-filter md:px-6"
     >
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger asChild>
