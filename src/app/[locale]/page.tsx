@@ -3,6 +3,7 @@ import { ContactMeSection } from "@/components/contact-form";
 import { ExperienceAndEducationSection } from "@/components/experience-and-education";
 import { Footer } from "@/components/footer";
 import { HeroSection } from "@/components/hero-section";
+import { HobbiesSection } from "@/components/hobbies";
 import { Navbar } from "@/components/navbar";
 import { ScrollToTopButton } from "@/components/scroll-to-top-button";
 import { getTranslations } from "@/i18n";
@@ -27,6 +28,7 @@ const MainPage = async (props: PageProps) => {
             <HeroSection />
             <AboutMeSection />
             <ExperienceAndEducationSection />
+            <HobbiesSection />
             <ContactMeSection />
           </div>
         </div>
