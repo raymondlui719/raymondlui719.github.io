@@ -36,12 +36,12 @@ export function SkillsSection() {
     >
       <h2 className="text-3xl font-bold tracking-tight">Skills/Tools</h2>
       <p className="text-muted-foreground">Technologies that I have worked frequently with</p>
-      <div className="mt-3 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-3 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         <Card>
           <CardHeader>
             <CardTitle>{"Frontend (Web)"}</CardTitle>
           </CardHeader>
-          <CardContent className="flex flex-wrap items-center justify-center gap-x-3 gap-y-6">
+          <CardContent className="flex flex-wrap items-center justify-center gap-x-2 gap-y-6 md:gap-x-3">
             <ReactOriginalWordmark size="30%" />
             <TypescriptOriginal size="30%" />
             <VuejsOriginalWordmark size="30%" />
@@ -53,7 +53,7 @@ export function SkillsSection() {
           <CardHeader>
             <CardTitle>{"Mobile App"}</CardTitle>
           </CardHeader>
-          <CardContent className="flex flex-wrap items-center justify-center gap-x-3 gap-y-6">
+          <CardContent className="flex flex-wrap items-center justify-center gap-x-2 gap-y-6 md:gap-x-3">
             <ReactnativeOriginalWordmark size="30%" />
             <FlutterOriginal size="30%" />
             <SwiftOriginal size="30%" />
@@ -66,7 +66,7 @@ export function SkillsSection() {
           <CardHeader>
             <CardTitle>Backend</CardTitle>
           </CardHeader>
-          <CardContent className="flex flex-wrap items-center justify-center gap-x-3 gap-y-6">
+          <CardContent className="flex flex-wrap items-center justify-center gap-x-2 gap-y-6 md:gap-x-3">
             <NextjsOriginalWordmark size="30%" className="fill-foreground" />
             <LaravelOriginalWordmark size="30%" />
             <MysqlOriginalWordmark size="30%" />
@@ -79,7 +79,7 @@ export function SkillsSection() {
           <CardHeader>
             <CardTitle>Team Work</CardTitle>
           </CardHeader>
-          <CardContent className="flex flex-wrap items-center justify-center gap-x-3 gap-y-6">
+          <CardContent className="flex flex-wrap items-center justify-center gap-x-2 gap-y-6 md:gap-x-3">
             <SlackOriginalWordmark size="50%" className="fill-foreground" />
             <GithubOriginalWordmark size="30%" className="dark:invert" />
           </CardContent>
@@ -97,7 +97,7 @@ export function SkillsSection() {
           <CardHeader>
             <CardTitle>Dev Tools</CardTitle>
           </CardHeader>
-          <CardContent className="flex flex-wrap items-center justify-center gap-x-3 gap-y-6">
+          <CardContent className="flex flex-wrap items-center justify-center gap-x-2 gap-y-6 md:gap-x-3">
             <AndroidstudioOriginal size="30%" />
             <VscodeOriginal size="30%" />
             <PhpstormOriginal size="30%" />
