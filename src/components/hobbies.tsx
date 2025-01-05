@@ -73,6 +73,12 @@ export function HobbiesSection() {
         <CarouselPrevious className="left-4 lg:-left-12" />
         <CarouselNext className="right-4 lg:-right-12" />
         <CarouselFadeEffect />
+        <p className="text-end text-xs text-muted-foreground">
+          Images from{" "}
+          <a href="https://www.freepik.com" className="text-primary underline" target="_blank">
+            Freepik
+          </a>
+        </p>
       </Carousel>
     </section>
   );
