@@ -1,6 +1,7 @@
 "use client";
 
 import Autoplay from "embla-carousel-autoplay";
+import { useTranslations } from "next-intl";
 import { ReactNode, useCallback, useEffect, useRef } from "react";
 import { Card, CardContent } from "./ui/card";
 import {
@@ -22,33 +23,8 @@ interface Hobby {
 export function HobbiesSection() {
   const plugin = useRef(Autoplay({ delay: 5000, stopOnInteraction: true }));
 
-  const hobbies: Hobby[] = [
-    {
-      title: "Badminton",
-      imageUrl: "/img/badminton.jpg",
-      description: "I enjoy playing badminton with friends!",
-    },
-    {
-      title: "Snooker",
-      imageUrl: "/img/snooker.jpg",
-      description: "Playing snooker is a bit challenge. But that's why I love that!",
-    },
-    {
-      title: "Bowling",
-      imageUrl: "/img/bowling.jpg",
-      description: "Playing bowling with friends is very exciting!",
-    },
-    {
-      title: "Super car",
-      imageUrl: "/img/supercar.jpg",
-      description: "I am also a car lover!",
-    },
-    {
-      title: "Meditation",
-      imageUrl: "/img/meditation.jpg",
-      description: "Meditation helps me to relax and clear my mind!",
-    },
-  ];
+  const t = useTranslations("Hobbies");
+  const hobbies = ["badminton", "snooker", "bowling", "supercar", "meditation"] as const;
 
   return (
     <section
@@ -58,8 +34,8 @@ export function HobbiesSection() {
         minHeight: "calc(100vh - 5rem)",
       }}
     >
-      <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">Hobbies</h3>
-      <p>What I like to do in my free time</p>
+      <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">{t("title")}</h3>
+      <p>{t("description")}</p>
       <Carousel
         opts={{
           loop: true,
@@ -77,15 +53,15 @@ export function HobbiesSection() {
                   <CardContent className="relative flex aspect-video items-center justify-center rounded-lg p-0">
                     <img
                       className="h-full w-full rounded-lg object-cover"
-                      src={hobby.imageUrl}
-                      alt={hobby.title}
+                      src={`/img/${hobby}.jpg`}
+                      alt={t(`${hobby}.title`)}
                     />
                     <div className="absolute bottom-0 left-0 right-0 flex flex-col items-center justify-center p-4">
-                      <h4 className="text-shadow text-center text-lg font-semibold shadow-black/30">
-                        {hobby.title}
+                      <h4 className="text-center text-lg font-semibold shadow-black/30 text-shadow">
+                        {t(`${hobby}.title`)}
                       </h4>
-                      <p className="text-shadow line-clamp-2 text-center text-sm shadow-black/30">
-                        {hobby.description}
+                      <p className="line-clamp-2 text-center text-sm shadow-black/30 text-shadow">
+                        {t(`${hobby}.description`)}
                       </p>
                     </div>
                   </CardContent>

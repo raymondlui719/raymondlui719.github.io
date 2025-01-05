@@ -27,9 +27,9 @@ const MainPage = async (props: PageProps) => {
         <div className="container mx-auto">
           <div className="mx-auto w-11/12">
             <HeroSection />
-            <AboutMeSection />
+            <AboutMeSection t={t} />
             <ExperienceAndEducationSection />
-            <SkillsSection />
+            <SkillsSection t={t} />
             <HobbiesSection />
             <ContactMeSection />
           </div>

@@ -1,10 +1,13 @@
+import { Translator } from "@/i18n";
+import { AppConstants } from "@/lib/constants";
 import Link from "next/link";
 import { FaEarthAsia, FaGithub, FaLinkedin } from "react-icons/fa6";
 import { LuMail } from "react-icons/lu";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 
-export function AboutMeSection() {
+export function AboutMeSection({ t }: { t: Translator }) {
+  const aboutKeys = ["lineOne", "lineTwo", "lineThree"] as const;
   return (
     <section
       id="about"
@@ -17,61 +20,49 @@ export function AboutMeSection() {
         <img
           src="/img/profilePic.jpg"
           className="aspect-square w-full max-w-52 place-self-center rounded-full border border-border object-cover"
-          alt="Raymond Lui"
+          alt={AppConstants.author}
         />
         <div className="flex flex-row items-center gap-2">
           <FaEarthAsia className="h-5 w-5 text-muted-foreground" />
-          <p>Asia/Hong Kong</p>
+          <p>{t("About.timezone")}</p>
         </div>
         <div className="flex flex-row flex-wrap items-center justify-center gap-2">
-          <Badge variant="outline">English</Badge>
-          <Badge variant="outline">Cantonese</Badge>
-          <Badge variant="outline">Putonghua</Badge>
+          <Badge variant="outline">{t("About.english")}</Badge>
+          <Badge variant="outline">{t("About.cantonese")}</Badge>
+          <Badge variant="outline">{t("About.putonghua")}</Badge>
         </div>
       </div>
       <div className="flex flex-col items-center md:col-span-2 md:items-start">
         <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-          Raymond Lui
+          {AppConstants.author}
         </h1>
         <h3 className="mt-1 scroll-m-20 text-2xl tracking-tight text-muted-foreground">
-          Software Engineer
+          {t("HeroSection.softwareEngineer")}
         </h3>
         <div className="mt-3 flex flex-row gap-3">
-          <Link href="https://github.com/raymondlui719" prefetch={false} target="_blank">
+          <Link href={AppConstants.githubUrl} prefetch={false} target="_blank">
             <Button variant="outline">
               <FaGithub className="h-4 w-4" />
               GitHub
             </Button>
           </Link>
-          <Link href="https://www.linkedin.com/in/raymondlui/" prefetch={false} target="_blank">
+          <Link href={AppConstants.linkedinUrl} prefetch={false} target="_blank">
             <Button variant="outline">
               <FaLinkedin className="h-4 w-4" />
               LinkedIn
             </Button>
           </Link>
-          <Link href="mailto:raymond.lui24@gmail.com" prefetch={false} target="_blank">
+          <Link href={AppConstants.emailUrl} prefetch={false} target="_blank">
             <Button variant="outline">
               <LuMail className="h-4 w-4" />
-              Email
+              {t("About.email")}
             </Button>
           </Link>
         </div>
         <div className="mt-4 flex w-full flex-col gap-4">
-          <p>
-            I am a Senior Software Engineer with 6 years of experience specializing in designing,
-            developing, testing, and maintaining sophisticated mobile applications, websites, and
-            backend servers. My expertise spans a wide range of domains, with a particular focus on
-            navigation, traffic, and B2C e-commerce platforms.
-          </p>
-          <p>
-            I excel at leading teams throughout the software development lifecycle, ensuring
-            effective coordination and collaboration to deliver end products that meet client
-            expectations.
-          </p>
-          <p>
-            I am skilled in establishing clear project goals, managing resources, and providing
-            guidance to team members to optimize productivity and achieve successful outcomes.
-          </p>
+          {aboutKeys.map((key) => (
+            <p key={key}>{t(`About.${key}`)}</p>
+          ))}
         </div>
       </div>
     </section>

@@ -1,6 +1,6 @@
 {
   "Index": {
-    "title": "Raymond Lui",
+    "title": "Raymond Lui的個人網站",
     "description": "歡迎來到 Raymond Lui 的個人網站!"
   },
   "Theme": {
@@ -14,6 +14,7 @@
     "experience": "工作經驗",
     "skills": "技能",
     "hobbies": "興趣",
+    "toggleMenu": "切換導航菜單",
     "contact": "與我聯絡"
   },
   "HeroSection": {
@@ -26,10 +27,95 @@
     "hireMe": "與我聯絡",
     "downloadCV": "下載履歷"
   },
+  "About": {
+    "timezone": "香港",
+    "english": "English",
+    "cantonese": "廣東話",
+    "putonghua": "普通話",
+    "email": "電郵",
+    "lineOne": "我係一位資深軟件工程師，有六年經驗，專注於設計、開發、測試同維護複雜嘅手機應用程式、網站同後端伺服器。我嘅專長涵蓋多個領域，特別係導航、交通同B2C電子商務平台。",
+    "lineTwo": "我擅長帶領團隊完成整個軟件開發生命週期，確保有效協調同合作，交付符合客戶期望嘅最終產品。",
+    "lineThree": "我能夠清晰地設立項目目標，管理資源，並為團隊成員提供指導，以優化生產力，實現成功嘅結果。"
+  },
   "Footer": {
     "copyright": "© {year} / {name} / 版權所有"
   },
+  "Experiences": {
+    "title": "工作經驗及學歷",
+    "description": "以下是我的工作經驗和學歷",
+    "pgFullTime": {
+      "date": "2018 - 現在",
+      "name": "Pokeguide Limited",
+      "title": "Mobile App Developer",
+      "location": "香港",
+      "description": "<ul><li>帶領一支由4位前端和後端開發人員及實習生組成的軟件開發團隊，創建導航應用程序、B2C電子商務平台，並優化後端系統，以確保代碼質量高且易於維護。</li><li>與設計和產品團隊協調，將商業概念轉化為全面的技術文件，增強跨部門溝通，加快項目交付。</li><li>持續關注行業趨勢和新興技術，以推動最佳實踐的採用，並提供尖端解決方案。</li></ul>"
+    },
+    "pgIntern": {
+      "date": "2017",
+      "name": "Pokeguide Limited",
+      "title": "Mobile App Developer Intern",
+      "location": "香港",
+      "description": "<ul><li>開發Pokeguide應用程序的Android版本，特別是針對視障用戶的導航功能。</li><li>與其他開發人員合作，在PHP中實現用戶身份驗證的後端。</li></ul>"
+    },
+    "pwc": {
+      "date": "2016",
+      "name": "PricewaterhouseCoopers",
+      "title": "Internal Firm Service Intern",
+      "location": "香港",
+      "description": "<ul><li>協助技術專家解決內部用戶的技術問題。</li><li>參與FY17的電腦更換計劃：為內部用戶設置新電腦，包括配置Windows、數據備份及安裝所需的應用程式。</li></ul>"
+    },
+    "hkust": {
+      "date": "2014 - 2018",
+      "name": "香港科技大學",
+      "title": "",
+      "location": "",
+      "description": "<ul><li>工程學士（計算機科學及工程）</li><li>副修：商業</li><li>Second Class Honors, Division I</li><li>FYP項目：使用Unity和Google Cardboard SDK開發VR恐怖遊戲 | 成績：A | 2018年最佳FYP項目獎提名</li><li>香港科技大學學生會合唱團成員。聲部：低音</li></ul>"
+    },
+    "css": {
+      "date": "2008 - 2014",
+      "name": "金文泰中學",
+      "title": "",
+      "location": "",
+      "description": "<ul><li>DSE最佳五科成績：25分（數學和資訊及通訊科技獲得5*級）</li><li>科技學會副主席</li></ul>"
+    }
+  },
+  "Skills": {
+    "title": "技能/工具",
+    "description": "我熟練使用的技術",
+    "frontend": "前端 (網頁)",
+    "backend": "後端",
+    "mobile": "手機應用程式",
+    "teamWork": "團隊合作",
+    "deployment": "系統部署",
+    "devTools": "開發工具"
+  },
+  "Hobbies": {
+    "title": "興趣/愛好",
+    "description": "我在空餘時間喜歡做的事情",
+    "badminton": {
+      "title": "羽毛球",
+      "description": "我喜歡和朋友一起打羽毛球!"
+    },
+    "snooker": {
+      "title": "桌球",
+      "description": "打桌球是一種挑戰，但是這是我喜歡的!"
+    },
+    "bowling": {
+      "title": "保齡球",
+      "description": "和朋友一起打保齡球是很有趣的!"
+    },
+    "supercar": {
+      "title": "超跑",
+      "description": "我也是車迷!"
+    },
+    "meditation": {
+      "title": "冥想",
+      "description": "冥想可以讓我放鬆和清楚思緒！"
+    }
+  },
   "ContactForm": {
+    "title": "與我聯絡",
+    "description": "我目前正在尋找新的機會。無論您有疑問還是只是想打個招呼，我都會盡快回覆您！",
     "fullName": "姓名",
     "fullNamePlaceholder": "請輸入您的姓名",
     "email": "電郵",
@@ -39,6 +125,9 @@
     "submit": "提交",
     "successTitle": "感謝您!",
     "successMessage": "已經收到您的訊息，我會盡快回覆您。",
+    "formErrorName": "請輸入姓名",
+    "formErrorEmail": "請輸入有效的電郵地址",
+    "formErrorMessage": "請輸入訊息",
     "errorTitle": "發生錯誤",
     "errorMessage": "請稍後再試"
   }

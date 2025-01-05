@@ -9,6 +9,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { AppConstants } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import { useTranslations } from "next-intl";
@@ -42,16 +43,16 @@ export function Navbar() {
         <SheetTrigger asChild>
           <Button variant="outline" size="icon" className="md:hidden">
             <LuMenu className="h-6 w-6" />
-            <span className="sr-only">Toggle navigation menu</span>
+            <span className="sr-only">{t("Navbar.toggleMenu")}</span>
           </Button>
         </SheetTrigger>
         <SheetContent side="left" onCloseAutoFocus={(event) => event.preventDefault()}>
           <SheetHeader>
             <Link href="#navbar" className="mr-6" prefetch={false}>
-              <SheetTitle className="text-start">{t("Index.title")}</SheetTitle>
+              <SheetTitle className="text-start">{AppConstants.author}</SheetTitle>
             </Link>
             <VisuallyHidden>
-              <SheetDescription>Drawer</SheetDescription>
+              <SheetDescription>{t("Navbar.toggleMenu")}</SheetDescription>
             </VisuallyHidden>
           </SheetHeader>
           <div className="grid gap-2 py-6">
@@ -70,7 +71,7 @@ export function Navbar() {
         </SheetContent>
       </Sheet>
       <NavLink href="#navbar" className="text-lg font-semibold">
-        {t("Index.title")}
+        {AppConstants.author}
       </NavLink>
       <nav className="ml-auto flex gap-6">
         {links.map((link) => (

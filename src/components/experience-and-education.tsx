@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import React from "react";
 import { LuBriefcaseBusiness, LuSchool, LuStar } from "react-icons/lu";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
@@ -15,104 +16,37 @@ interface ExperienceItem {
 }
 
 export function ExperienceAndEducationSection() {
+  const t = useTranslations("Experiences");
+  const experiences = ["pgFullTime", "pgIntern", "pwc"] as const;
+  const educations = ["hkust", "css"] as const;
   const items: ExperienceItem[] = [
-    {
-      date: "2018 - Present",
-      name: "Pokeguide Limited",
-      title: "Mobile App Developer",
-      location: "Hong Kong SAR",
-      description: (
-        <ul className="mt-1 list-inside list-disc text-sm">
-          <li>
-            Lead software development team of 4 front-end and back-end developers and interns in
-            creating navigation apps, B2C e-commerce platform, and optimizing backend systems to
-            ensure high quality and maintainable code.
-          </li>
-          <li>
-            Coordinate with design and product teams to translate business concepts into
-            comprehensive technical documents, enhancing cross-functional communication and
-            accelerating project delivery.
-          </li>
-          <li>
-            Stay up-to-date with industry trends and emerging technologies to drive the adoption of
-            best practices and deliver cutting-edge solutions.
-          </li>
-        </ul>
-      ),
+    ...experiences.map((experience) => ({
+      date: t(`${experience}.date`),
+      name: t(`${experience}.name`),
+      title: t(`${experience}.title`),
+      location: t(`${experience}.location`),
+      description: t.rich(`${experience}.description`, {
+        ul: (chunks) => <ul className="mt-1 list-inside list-disc text-sm">{chunks}</ul>,
+        li: (chunks) => <li>{chunks}</li>,
+      }),
       icon: <LuBriefcaseBusiness />,
-    },
-    {
-      date: "2017",
-      name: "Pokeguide Limited",
-      title: "Mobile App Developer Intern",
-      location: "Hong Kong SAR",
-      description: (
-        <ul className="mt-1 list-inside list-disc text-sm">
-          <li>
-            Develop the Android version of the Pokeguide App, especially the navigation function for
-            visually impaired users
-          </li>
-          <li>Collaborate with other developers to implement user authentication backend in PHP</li>
-        </ul>
-      ),
-      icon: <LuBriefcaseBusiness />,
-    },
-    {
-      date: "2016",
-      name: "PricewaterhouseCoopers",
-      title: "Internal Firm Service Intern",
-      location: "Hong Kong SAR",
-      description: (
-        <ul className="mt-1 list-inside list-disc text-sm">
-          <li>Assist technical specialists to solve technical issues from the internal users</li>
-          <li>
-            Participate in the PC replacement scheme FY17:
-            <ul className="ms-5 mt-1 list-inside list-disc text-sm">
-              <li>
-                Setup a new PC for internal users by configuring Windows, data backup & installing
-                requested application.
-              </li>
-            </ul>
-          </li>
-        </ul>
-      ),
-      icon: <LuBriefcaseBusiness />,
-    },
-    {
-      date: "2014 - 2018",
-      name: "Hong Kong University of Science and Technology",
-      description: (
-        <ul className="mt-1 list-inside list-disc text-sm">
-          <li>Bachelor of Engineering in Computer Science</li>
-          <li>Minoring in Business</li>
-          <li>Second Class Honors, Division I</li>
-          <li>
-            Final Year Project: Developing VR Horror Game with Unity and Google Cardboard SDK |
-            Grade: A | Nominee of Best FYP Award 2018
-          </li>
-          <li>Member of University Choir, HKUSTSU. Vocal Part: Bass</li>
-        </ul>
-      ),
+    })),
+    ...educations.map((education) => ({
+      date: t(`${education}.date`),
+      name: t(`${education}.name`),
+      title: t(`${education}.title`),
+      location: t(`${education}.location`),
+      description: t.rich(`${education}.description`, {
+        ul: (chunks) => <ul className="mt-1 list-inside list-disc text-sm">{chunks}</ul>,
+        li: (chunks) => <li>{chunks}</li>,
+      }),
       icon: <LuSchool />,
-    },
-    {
-      date: "2008 - 2014",
-      name: "Clementi Secondary School",
-      description: (
-        <ul className="mt-1 list-inside list-disc text-sm">
-          <li>{"DSE Best 5 score: 25 (With level 5* for Mathematics and ICT)"}</li>
-          <li>Vice Chairperson of Technology Society</li>
-        </ul>
-      ),
-      icon: <LuSchool />,
-    },
+    })),
   ];
   return (
     <section id="experience" className="mt-12 flex scroll-mt-32 flex-col items-center">
-      <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
-        Work Experience & Education
-      </h3>
-      <p>My previous jobs and my qualifications.</p>
+      <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">{t("title")}</h3>
+      <p>{t("description")}</p>
       <VerticalTimeline
         animate={true}
         layout="2-columns"

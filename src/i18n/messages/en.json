@@ -1,6 +1,6 @@
 {
   "Index": {
-    "title": "Raymond Lui",
+    "title": "Raymond Lui's Portfolio",
     "description": "Welcome to Raymond Lui's Portfolio!"
   },
   "Theme": {
@@ -14,6 +14,7 @@
     "experience": "Experience",
     "skills": "Skills",
     "hobbies": "Hobbies",
+    "toggleMenu": "Toggle navigation menu",
     "contact": "Contact"
   },
   "HeroSection": {
@@ -26,10 +27,95 @@
     "hireMe": "Hire Me",
     "downloadCV": "Download CV"
   },
+  "About": {
+    "timezone": "Asia/Hong Kong",
+    "english": "English",
+    "cantonese": "Cantonese",
+    "putonghua": "Putonghua",
+    "email": "Email",
+    "lineOne": "I am a Senior Software Engineer with 6 years of experience specializing in designing, developing, testing, and maintaining sophisticated mobile applications, websites, and backend servers. My expertise spans a wide range of domains, with a particular focus on navigation, traffic, and B2C e-commerce platforms.",
+    "lineTwo": "I excel at leading teams throughout the software development lifecycle, ensuring effective coordination and collaboration to deliver end products that meet client expectations.",
+    "lineThree": "I am skilled in establishing clear project goals, managing resources, and providing guidance to team members to optimize productivity and achieve successful outcomes."
+  },
   "Footer": {
     "copyright": "© {year} / {name} / All rights reserved."
   },
+  "Experiences": {
+    "title": "Work Experience & Education",
+    "description": "My previous jobs and my qualifications",
+    "pgFullTime": {
+      "date": "2018 - Present",
+      "name": "Pokeguide Limited",
+      "title": "Mobile App Developer",
+      "location": "Hong Kong SAR",
+      "description": "<ul><li>Lead software development team of 4 front-end and back-end developers and interns in creating navigation apps, B2C e-commerce platform, and optimizing backend systems to ensure high quality and maintainable code.</li><li>Coordinate with design and product teams to translate business concepts into comprehensive technical documents, enhancing cross-functional communication and accelerating project delivery.</li><li>Stay up-to-date with industry trends and emerging technologies to drive the adoption of best practices and deliver cutting-edge solutions.</li></ul>"
+    },
+    "pgIntern": {
+      "date": "2017",
+      "name": "Pokeguide Limited",
+      "title": "Mobile App Developer Intern",
+      "location": "Hong Kong SAR",
+      "description": "<ul><li>Develop the Android version of the Pokeguide App, especially the navigation function for visually impaired users</li><li>Collaborate with other developers to implement user authentication backend in PHP</li></ul>"
+    },
+    "pwc": {
+      "date": "2016",
+      "name": "PricewaterhouseCoopers",
+      "title": "Internal Firm Service Intern",
+      "location": "Hong Kong SAR",
+      "description": "<ul><li>Assist technical specialists to solve technical issues from the internal users</li><li>Participate in the PC replacement scheme FY17: Setup a new PC for internal users by configuring Windows, data backup & installing requested application.</li></ul>"
+    },
+    "hkust": {
+      "date": "2014 - 2018",
+      "name": "The Hong Kong University of Science and Technology",
+      "title": "",
+      "location": "",
+      "description": "<ul><li>Bachelor of Engineering in Computer Science</li><li>Minoring in Business</li><li>Second Class Honors, Division I</li><li>Final Year Project: Developing VR Horror Game with Unity and Google Cardboard SDK | Grade: A | Nominee of Best FYP Award 2018</li><li>Member of University Choir, HKUSTSU. Vocal Part: Bass</li></ul>"
+    },
+    "css": {
+      "date": "2008 - 2014",
+      "name": "Clementi Secondary School",
+      "title": "",
+      "location": "",
+      "description": "<ul><li>DSE Best 5 score: 25 (With level 5* for Mathematics and ICT)</li><li>Vice Chairperson of Technology Society</li></ul>"
+    }
+  },
+  "Skills": {
+    "title": "Skills/Tools",
+    "description": "Technologies that I have worked frequently with",
+    "frontend": "Frontend (Web)",
+    "backend": "Backend",
+    "mobile": "Mobile App",
+    "teamWork": "Team Work",
+    "deployment": "Deployment",
+    "devTools": "Dev Tools"
+  },
+  "Hobbies": {
+    "title": "Hobbies",
+    "description": "What I like to do in my free time",
+    "badminton": {
+      "title": "Badminton",
+      "description": "I enjoy playing badminton with friends!"
+    },
+    "snooker": {
+      "title": "Snooker",
+      "description": "Playing snooker is a bit challenge. But that's why I love that!"
+    },
+    "bowling": {
+      "title": "Bowling",
+      "description": "Playing bowling with friends is very exciting!"
+    },
+    "supercar": {
+      "title": "Super car",
+      "description": "I am also a car lover!"
+    },
+    "meditation": {
+      "title": "Meditation",
+      "description": "Meditation helps me to relax and clear my mind!"
+    }
+  },
   "ContactForm": {
+    "title": "Let's Connect",
+    "description": "I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
     "fullName": "Your name",
     "fullNamePlaceholder": "Enter your full name here",
     "email": "Your email",
@@ -39,6 +125,9 @@
     "submit": "Submit",
     "successTitle": "Thank you!",
     "successMessage": "I have received your message. I will get back to you soon.",
+    "formErrorName": "Please enter your name.",
+    "formErrorEmail": "Please enter a valid email address.",
+    "formErrorMessage": "Please enter a message.",
     "errorTitle": "Oops! Something went wrong.",
     "errorMessage": "Please try again later."
   }

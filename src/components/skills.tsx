@@ -23,9 +23,10 @@ import TypescriptOriginal from "devicons-react/lib/icons/TypescriptOriginal";
 import VscodeOriginal from "devicons-react/lib/icons/VscodeOriginal";
 import VuejsOriginalWordmark from "devicons-react/lib/icons/VuejsOriginalWordmark";
 
+import { Translator } from "@/i18n";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
-export function SkillsSection() {
+export function SkillsSection({ t }: { t: Translator }) {
   return (
     <section
       id="skills"
@@ -34,12 +35,12 @@ export function SkillsSection() {
         minHeight: "calc(100vh - 5rem)",
       }}
     >
-      <h2 className="text-3xl font-bold tracking-tight">Skills/Tools</h2>
-      <p className="text-muted-foreground">Technologies that I have worked frequently with</p>
+      <h2 className="text-3xl font-bold tracking-tight">{t("Skills.title")}</h2>
+      <p className="text-muted-foreground">{t("Skills.description")}</p>
       <div className="mt-3 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         <Card>
           <CardHeader>
-            <CardTitle>{"Frontend (Web)"}</CardTitle>
+            <CardTitle>{t("Skills.frontend")}</CardTitle>
           </CardHeader>
           <CardContent className="flex flex-wrap items-center justify-center gap-x-2 gap-y-6 md:gap-x-3">
             <ReactOriginalWordmark size="30%" />
@@ -51,7 +52,7 @@ export function SkillsSection() {
         </Card>
         <Card>
           <CardHeader>
-            <CardTitle>{"Mobile App"}</CardTitle>
+            <CardTitle>{t("Skills.mobile")}</CardTitle>
           </CardHeader>
           <CardContent className="flex flex-wrap items-center justify-center gap-x-2 gap-y-6 md:gap-x-3">
             <ReactnativeOriginalWordmark size="30%" />
@@ -64,7 +65,7 @@ export function SkillsSection() {
         </Card>
         <Card>
           <CardHeader>
-            <CardTitle>Backend</CardTitle>
+            <CardTitle>{t("Skills.backend")}</CardTitle>
           </CardHeader>
           <CardContent className="flex flex-wrap items-center justify-center gap-x-2 gap-y-6 md:gap-x-3">
             <NextjsOriginalWordmark size="30%" className="fill-foreground" />
@@ -77,7 +78,7 @@ export function SkillsSection() {
         </Card>
         <Card>
           <CardHeader>
-            <CardTitle>Team Work</CardTitle>
+            <CardTitle>{t("Skills.teamWork")}</CardTitle>
           </CardHeader>
           <CardContent className="flex flex-wrap items-center justify-center gap-x-2 gap-y-6 md:gap-x-3">
             <SlackOriginalWordmark size="50%" className="fill-foreground" />
@@ -86,7 +87,7 @@ export function SkillsSection() {
         </Card>
         <Card>
           <CardHeader>
-            <CardTitle>Deployment</CardTitle>
+            <CardTitle>{t("Skills.deployment")}</CardTitle>
           </CardHeader>
           <CardContent className="flex flex-wrap items-center justify-center gap-x-5 gap-y-6">
             <DockerPlainWordmark size="30%" className="fill-foreground" />
@@ -95,7 +96,7 @@ export function SkillsSection() {
         </Card>
         <Card>
           <CardHeader>
-            <CardTitle>Dev Tools</CardTitle>
+            <CardTitle>{t("Skills.devTools")}</CardTitle>
           </CardHeader>
           <CardContent className="flex flex-wrap items-center justify-center gap-x-2 gap-y-6 md:gap-x-3">
             <AndroidstudioOriginal size="30%" />
