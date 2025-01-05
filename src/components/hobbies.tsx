@@ -20,7 +20,7 @@ interface Hobby {
 }
 
 export function HobbiesSection() {
-  const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
+  const plugin = useRef(Autoplay({ delay: 5000, stopOnInteraction: true }));
 
   const hobbies: Hobby[] = [
     {
@@ -81,8 +81,12 @@ export function HobbiesSection() {
                       alt={hobby.title}
                     />
                     <div className="absolute bottom-0 left-0 right-0 flex flex-col items-center justify-center p-4">
-                      <h4 className="text-center text-lg font-semibold">{hobby.title}</h4>
-                      <p className="line-clamp-2 text-center text-sm">{hobby.description}</p>
+                      <h4 className="text-shadow text-center text-lg font-semibold shadow-black/30">
+                        {hobby.title}
+                      </h4>
+                      <p className="text-shadow line-clamp-2 text-center text-sm shadow-black/30">
+                        {hobby.description}
+                      </p>
                     </div>
                   </CardContent>
                 </Card>
