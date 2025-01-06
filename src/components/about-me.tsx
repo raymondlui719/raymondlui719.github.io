@@ -1,5 +1,6 @@
 import { Translator } from "@/i18n";
 import { AppConstants } from "@/lib/constants";
+import Image from "next/image";
 import Link from "next/link";
 import { FaEarthAsia, FaGithub, FaLinkedin } from "react-icons/fa6";
 import { LuMail } from "react-icons/lu";
@@ -17,11 +18,14 @@ export function AboutMeSection({ t }: { t: Translator }) {
       }}
     >
       <div className="flex flex-col items-center gap-4 md:col-span-1">
-        <img
-          src="/img/profilePic.jpg"
-          className="aspect-square w-full max-w-52 place-self-center rounded-full border border-border object-cover"
-          alt={AppConstants.author}
-        />
+        <div className="relative aspect-square w-full max-w-52 place-self-center">
+          <Image
+            src="/img/profilePic.jpg"
+            className="rounded-full border border-border object-cover"
+            alt={AppConstants.author}
+            fill
+          />
+        </div>
         <div className="flex flex-row items-center gap-2">
           <FaEarthAsia className="h-5 w-5 text-muted-foreground" />
           <p>{t("About.timezone")}</p>

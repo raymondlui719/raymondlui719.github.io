@@ -2,6 +2,7 @@
 
 import Autoplay from "embla-carousel-autoplay";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { ReactNode, useCallback, useEffect, useRef } from "react";
 import { Card, CardContent } from "./ui/card";
 import {
@@ -51,10 +52,11 @@ export function HobbiesSection() {
               <div className="p-1">
                 <Card>
                   <CardContent className="relative flex aspect-video items-center justify-center rounded-lg p-0">
-                    <img
+                    <Image
                       className="h-full w-full rounded-lg object-cover"
                       src={`/img/${hobby}.jpg`}
                       alt={t(`${hobby}.title`)}
+                      fill
                     />
                     <div className="absolute bottom-0 left-0 right-0 flex flex-col items-center justify-center p-4">
                       <h4 className="text-center text-lg font-semibold shadow-black/30 text-shadow">

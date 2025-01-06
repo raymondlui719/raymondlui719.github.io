@@ -15,7 +15,8 @@ const nextConfig: NextConfig = {
    * @see https://nextjs.org/docs/app/api-reference/components/image#unoptimized
    */
   images: {
-    unoptimized: true,
+    loader: "custom",
+    loaderFile: "./image-loader.js",
   },
 };
 
