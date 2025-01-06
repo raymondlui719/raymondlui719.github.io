@@ -36,9 +36,9 @@ export function AboutMeSection({ t }: { t: Translator }) {
         <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
           {AppConstants.author}
         </h1>
-        <h3 className="mt-1 scroll-m-20 text-2xl tracking-tight text-muted-foreground">
+        <h2 className="mt-1 scroll-m-20 text-2xl tracking-tight text-muted-foreground">
           {t("HeroSection.softwareEngineer")}
-        </h3>
+        </h2>
         <div className="mt-3 flex flex-row gap-3">
           <Link href={AppConstants.githubUrl} prefetch={false} target="_blank">
             <Button variant="outline">

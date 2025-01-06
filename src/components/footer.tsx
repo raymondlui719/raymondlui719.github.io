@@ -14,13 +14,18 @@ export function Footer({ t }: { t: Translator }) {
           {t("Footer.copyright", { year, name: AppConstants.author })}
         </p>
         <div className="flex gap-4">
-          <Link href={AppConstants.githubUrl} prefetch={false} target="_blank">
+          <Link href={AppConstants.githubUrl} prefetch={false} target="_blank" aria-label="GitHub">
             <FaGithub className="h-6 w-6" />
           </Link>
-          <Link href={AppConstants.linkedinUrl} prefetch={false} target="_blank">
+          <Link
+            href={AppConstants.linkedinUrl}
+            prefetch={false}
+            target="_blank"
+            aria-label="LinkedIn"
+          >
             <FaLinkedin className="h-6 w-6" />
           </Link>
-          <Link href={AppConstants.emailUrl} prefetch={false} target="_blank">
+          <Link href={AppConstants.emailUrl} prefetch={false} target="_blank" aria-label="Email">
             <LuMail className="h-6 w-6" />
           </Link>
         </div>
