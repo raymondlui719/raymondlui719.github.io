@@ -48,7 +48,7 @@ export function Navbar() {
         </SheetTrigger>
         <SheetContent side="left" onCloseAutoFocus={(event) => event.preventDefault()}>
           <SheetHeader>
-            <Link href="#navbar" className="mr-6" prefetch={false}>
+            <Link href="#navbar" className="mr-6" prefetch={false} onClick={() => setOpen(false)}>
               <SheetTitle className="text-start">{AppConstants.author}</SheetTitle>
             </Link>
             <VisuallyHidden>
