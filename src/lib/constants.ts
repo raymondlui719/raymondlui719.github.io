@@ -1,5 +1,6 @@
 export const AppConstants = {
   author: "Raymond Lui",
+  websiteUrl: "https://raymondlui719.github.io",
   githubUrl: "https://github.com/raymondlui719",
   linkedinUrl: "https://www.linkedin.com/in/raymondlui719",
   emailUrl: "mailto:raymond.lui24@gmail.com",

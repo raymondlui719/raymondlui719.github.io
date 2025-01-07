@@ -44,19 +44,34 @@ export function AboutMeSection({ t }: { t: Translator }) {
           {t("HeroSection.softwareEngineer")}
         </h2>
         <div className="mt-3 flex flex-row gap-3">
-          <Link href={AppConstants.githubUrl} prefetch={false} target="_blank">
+          <Link
+            href={AppConstants.githubUrl}
+            prefetch={false}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button variant="outline">
               <FaGithub className="h-4 w-4" />
               GitHub
             </Button>
           </Link>
-          <Link href={AppConstants.linkedinUrl} prefetch={false} target="_blank">
+          <Link
+            href={AppConstants.linkedinUrl}
+            prefetch={false}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button variant="outline">
               <FaLinkedin className="h-4 w-4" />
               LinkedIn
             </Button>
           </Link>
-          <Link href={AppConstants.emailUrl} prefetch={false} target="_blank">
+          <Link
+            href={AppConstants.emailUrl}
+            prefetch={false}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button variant="outline">
               <LuMail className="h-4 w-4" />
               {t("About.email")}

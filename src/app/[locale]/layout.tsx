@@ -2,6 +2,7 @@ import { IntlProvider } from "@/components/intl-provider";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/toaster";
 import { getMessages, getTranslations, supportedLocales } from "@/i18n";
+import { AppConstants } from "@/lib/constants";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
@@ -58,7 +59,52 @@ export async function generateMetadata(props: RootLayoutProps): Promise<Metadata
 
   const t = await getTranslations({ locale });
   return {
-    title: "Raymond Lui",
+    title: t("Index.title"),
     description: t("Index.description"),
+    applicationName: t("Index.title"),
+    authors: {
+      name: AppConstants.author,
+      url: AppConstants.githubUrl,
+    },
+    creator: AppConstants.author,
+    generator: "Next.js",
+    keywords: [
+      "software",
+      "developer",
+      "raymond",
+      "engineer",
+      "web",
+      "programming",
+      "mobile",
+      "backend",
+    ],
+    alternates: {
+      canonical: "/",
+      languages: Object.fromEntries(supportedLocales.map((l) => [l, `/${l}`])),
+    },
+    manifest: `${AppConstants.websiteUrl}/manifest.json`,
+    openGraph: {
+      type: "website",
+      url: AppConstants.websiteUrl,
+      title: t("Index.title"),
+      description: t("Index.description"),
+      siteName: t("Index.title"),
+    },
+    twitter: {
+      site: AppConstants.websiteUrl,
+      creator: "@RaymondLui719",
+      description: t("Index.description"),
+      title: t("Index.title"),
+    },
+    verification: {
+      google: "NV2S5Bwgb9p5rXtdjgaeC_s-BujspeKuzL4wfejESwk",
+    },
+    formatDetection: {
+      telephone: false,
+      date: false,
+      address: false,
+      email: false,
+      url: false,
+    },
   };
 }
