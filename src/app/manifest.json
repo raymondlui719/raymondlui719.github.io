@@ -1,0 +1,16 @@
+{
+  "name": "Raymond Lui's Portfolio",
+  "short_name": "Raymond Lui",
+  "description": "Welcome to Raymond Lui's Portfolio!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#fff",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}

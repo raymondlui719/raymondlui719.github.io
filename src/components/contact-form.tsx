@@ -101,7 +101,13 @@ export function ContactMeSection() {
         <h5 className="my-2 text-xl font-bold text-foreground">{t("ContactForm.title")}</h5>
         <p className="mb-4 max-w-md text-muted-foreground">{t("ContactForm.description")}</p>
         <div className="flex flex-row gap-2">
-          <Link href={AppConstants.githubUrl} prefetch={false} target="_blank" aria-label="Github">
+          <Link
+            href={AppConstants.githubUrl}
+            prefetch={false}
+            target="_blank"
+            aria-label="Github"
+            rel="noopener noreferrer"
+          >
             <FaGithub className="h-8 w-8" />
           </Link>
           <Link
@@ -109,6 +115,7 @@ export function ContactMeSection() {
             prefetch={false}
             target="_blank"
             aria-label="LinkedIn"
+            rel="noopener noreferrer"
           >
             <FaLinkedin className="h-8 w-8" />
           </Link>
@@ -117,6 +124,7 @@ export function ContactMeSection() {
             prefetch={false}
             target="_blank"
             aria-label="Whatsapp"
+            rel="noopener noreferrer"
           >
             <FaWhatsapp className="h-8 w-8" />
           </Link>

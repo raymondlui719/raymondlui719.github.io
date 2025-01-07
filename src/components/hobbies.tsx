@@ -77,7 +77,12 @@ export function HobbiesSection() {
         <CarouselFadeEffect />
         <p className="text-end text-xs text-muted-foreground">
           Images from{" "}
-          <a href="https://www.freepik.com" className="text-primary underline" target="_blank">
+          <a
+            href="https://www.freepik.com"
+            className="text-primary underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Freepik
           </a>
         </p>
