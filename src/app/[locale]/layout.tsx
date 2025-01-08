@@ -116,8 +116,10 @@ export async function generateMetadata(props: RootLayoutProps): Promise<Metadata
       "backend",
     ],
     alternates: {
-      canonical: "/",
-      languages: Object.fromEntries(supportedLocales.map((l) => [l, `/${l}`])),
+      canonical: AppConstants.websiteUrl,
+      languages: Object.fromEntries(
+        supportedLocales.map((locale) => [locale, `${AppConstants.websiteUrl}/${locale}`]),
+      ),
     },
     manifest: `${AppConstants.websiteUrl}/manifest.json`,
     openGraph: {
