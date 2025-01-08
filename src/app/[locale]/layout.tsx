@@ -3,20 +3,10 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/toaster";
 import { getMessages, getTranslations, supportedLocales } from "@/i18n";
 import { AppConstants } from "@/lib/constants";
+import { geistMono, geistSans } from "@/lib/fonts";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import { Person, WithContext } from "schema-dts";
 import "../globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export async function generateStaticParams() {
   return supportedLocales.map((locale) => ({
