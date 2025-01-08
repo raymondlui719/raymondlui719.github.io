@@ -5,4 +5,5 @@ export const AppConstants = {
   linkedinUrl: "https://www.linkedin.com/in/raymondlui719",
   emailUrl: "mailto:raymond.lui24@gmail.com",
   whatsappUrl: "https://wa.me/85268021274",
+  twitterUrl: "https://x.com/raymondlui719",
 };

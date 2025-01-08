@@ -5,6 +5,7 @@ import { getMessages, getTranslations, supportedLocales } from "@/i18n";
 import { AppConstants } from "@/lib/constants";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Person, WithContext } from "schema-dts";
 import "../globals.css";
 
 const geistSans = Geist({
@@ -33,9 +34,45 @@ export default async function RootLayout(props: RootLayoutProps) {
   const { children } = props;
   const messages = await getMessages(params.locale);
 
+  const jsonLd: WithContext<Person> = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Raymond Lui",
+    givenName: "Raymond",
+    familyName: "Lui",
+    gender: "https://schema.org/Male",
+    url: AppConstants.websiteUrl,
+    image: `${AppConstants.websiteUrl}/img/profilePic.jpg`,
+    description: messages.Index.description,
+    sameAs: [AppConstants.linkedinUrl, AppConstants.twitterUrl, AppConstants.githubUrl],
+    jobTitle: "Senior Software Engineer",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": AppConstants.websiteUrl,
+    },
+    knowsLanguage: ["yue-Hant-HK", "en"],
+    alumniOf: [
+      {
+        "@type": "CollegeOrUniversity",
+        name: "Hong Kong University of Science and Technology",
+        sameAs: "https://hkust.edu.hk/",
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        name: "Clementi Secondary School",
+        sameAs: "https://www.clementi.edu.hk/",
+      },
+    ],
+  };
+
   return (
     <html lang={params.locale} suppressHydrationWarning className="scroll-smooth">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
