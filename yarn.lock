@@ -1744,10 +1744,10 @@ detect-node-es@^1.1.0:
   resolved "https://registry.yarnpkg.com/detect-node-es/-/detect-node-es-1.1.0.tgz#163acdf643330caa0b4cd7c21e7ee7755d6fa493"
   integrity sha512-ypdmJU/TbBby2Dxibuv7ZLW3Bs1QEmM7nHjEANfohJLvE0XVujisn1qPJcZxg+qDucsr+bP6fLD1rPS3AhJ7EQ==
 
-devicons-react@^1.5.0-beta.3:
-  version "1.5.0-beta.3"
-  resolved "https://registry.yarnpkg.com/devicons-react/-/devicons-react-1.5.0-beta.3.tgz#d5819f7c8ae4d1636d0cfe81fd5198433c33c954"
-  integrity sha512-679kMGU3Bh8+olAzPTqf+v9BttZzcj9ywR6hy0a+hlKCJ6nwdZlBHHCH4qgZyiQJoPhI9i8YCmtlhDmY5cOX7w==
+devicons-react@^1.5.0-beta.8:
+  version "1.5.0-beta.8"
+  resolved "https://registry.yarnpkg.com/devicons-react/-/devicons-react-1.5.0-beta.8.tgz#bf736c7dbef2f799c04f8edd5ca10a72a57fbd7b"
+  integrity sha512-RhZT0ESFHTHHzPOWhlKl+kT9nOvItQRV+ZqizYONIJYHPuDfl95a5ZHNpqIK/kUJROXAPZJ1rk/38jSOMO4zYA==
 
 didyoumean@^1.2.2:
   version "1.2.2"
