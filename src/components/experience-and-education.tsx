@@ -17,7 +17,7 @@ interface ExperienceItem {
 
 export function ExperienceAndEducationSection() {
   const t = useTranslations("Experiences");
-  const experiences = ["pgFullTime", "pgIntern", "pwc"] as const;
+  const experiences = ["pgLead", "pgSenior", "pgFullTime", "pgIntern", "pwc"] as const;
   const educations = ["hkust", "css"] as const;
   const items: ExperienceItem[] = [
     ...experiences.map((experience) => ({

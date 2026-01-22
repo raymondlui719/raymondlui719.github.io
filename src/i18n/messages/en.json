@@ -1,7 +1,7 @@
 {
   "Index": {
     "title": "Raymond Lui's Portfolio",
-    "description": "Welcome to my Portfolio! I am a senior software engineer specializing in designing, developing, and maintaining sophisticated mobile applications, websites, and backend applications."
+    "description": "Welcome to my Portfolio! I am a lead software engineer specializing in designing, developing, and maintaining sophisticated mobile applications, websites, and backend applications."
   },
   "Theme": {
     "toggle": "Toggle Theme",
@@ -19,11 +19,11 @@
   },
   "HeroSection": {
     "Hello": "Hello, I'm",
-    "softwareEngineer": "a Software Engineer",
+    "softwareEngineer": "a Lead Software Engineer",
     "mobileDeveloper": "a Mobile Developer",
     "webDeveloper": "a Web Developer",
     "backendDeveloper": "a Backend Engineer",
-    "summary": "I am Raymond Lui, a senior software engineer specializing in designing, developing, and maintaining sophisticated mobile applications, websites, and backend applications.",
+    "summary": "I am Raymond Lui, a lead software engineer specializing in designing, developing, and maintaining sophisticated mobile applications, websites, and backend applications.",
     "hireMe": "Hire Me",
     "downloadCV": "Download CV"
   },
@@ -33,7 +33,7 @@
     "cantonese": "Cantonese",
     "putonghua": "Putonghua",
     "email": "Email",
-    "lineOne": "I am a Senior Software Engineer with 6 years of experience specializing in designing, developing, testing, and maintaining sophisticated mobile applications, websites, and backend servers. My expertise spans a wide range of domains, with a particular focus on navigation, traffic, and B2C e-commerce platforms.",
+    "lineOne": "I am a Lead Software Engineer with {yoe} years of experience specializing in designing, developing, testing, and maintaining sophisticated mobile applications, websites, and backend servers. My expertise spans a wide range of domains, with a particular focus on navigation, traffic, and B2C e-commerce platforms.",
     "lineTwo": "I excel at leading teams throughout the software development lifecycle, ensuring effective coordination and collaboration to deliver end products that meet client expectations.",
     "lineThree": "I am skilled in establishing clear project goals, managing resources, and providing guidance to team members to optimize productivity and achieve successful outcomes."
   },
@@ -43,12 +43,26 @@
   "Experiences": {
     "title": "Work Experience & Education",
     "description": "My previous jobs and my qualifications",
+    "pgLead": {
+      "date": "Jan 2024 - Present",
+      "name": "Pokeguide Limited",
+      "title": "Software Engineer Lead",
+      "location": "Hong Kong SAR",
+      "description": "<ul><li>Led an Agile project team of 5+ software engineers to develop the navigation module, e-commerce module, and external projects to ensure the delivery of high-quality products.</li><li>Teamed with software engineers, designers, and product managers on projects to ensure smooth communication</li><li>Overhauled legacy backend PHP code with OOP principles and proper framework, significantly improving code maintainability and reducing bugs by 50%.</li><li>Streamlined deployment process with Docker containers, speeding up the project release timelines.</li></ul>"
+    },
+    "pgSenior": {
+      "date": "Aug 2021 - Dec 2023",
+      "name": "Pokeguide Limited",
+      "title": "Senior Mobile App Developer",
+      "location": "Hong Kong SAR",
+      "description": "<ul><li>Flutter app development for the Pokeguide app.</li><li>Utilized both Flutter and React Native to develop external mobile application projects.</li><li>Migrated the navigation app, which was initially written in native languages, to Flutter in 6 months.</li><li>Developed and optimized the routing engine for the navigation app, resulting in an 80% improvement in the graph initialization speed.</li></ul>"
+    },
     "pgFullTime": {
-      "date": "2018 - Present",
+      "date": "May 2018 - Jul 2021",
       "name": "Pokeguide Limited",
       "title": "Mobile App Developer",
       "location": "Hong Kong SAR",
-      "description": "<ul><li>Lead software development team of 4 front-end and back-end developers and interns in creating navigation apps, B2C e-commerce platform, and optimizing backend systems to ensure high quality and maintainable code.</li><li>Coordinate with design and product teams to translate business concepts into comprehensive technical documents, enhancing cross-functional communication and accelerating project delivery.</li><li>Stay up-to-date with industry trends and emerging technologies to drive the adoption of best practices and deliver cutting-edge solutions.</li></ul>"
+      "description": "<ul><li>Android app development for the Pokeguide app.</li><li>Improved code quality by introducing MVVM architecture, reducing debugging time by 40%.</li></ul>"
     },
     "pgIntern": {
       "date": "2017",

@@ -80,7 +80,16 @@ export function AboutMeSection({ t }: { t: Translator }) {
         </div>
         <div className="mt-4 flex w-full flex-col gap-4">
           {aboutKeys.map((key) => (
-            <p key={key}>{t(`About.${key}`)}</p>
+            <p key={key}>
+              {t(
+                `About.${key}`,
+                key === "lineOne"
+                  ? {
+                      yoe: (new Date().getFullYear() - 2018).toString(),
+                    }
+                  : undefined,
+              )}
+            </p>
           ))}
         </div>
       </div>

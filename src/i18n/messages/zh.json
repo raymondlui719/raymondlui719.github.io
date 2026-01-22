@@ -1,7 +1,7 @@
 {
   "Index": {
     "title": "Raymond Lui的個人網站",
-    "description": "歡迎來到我的個人網站！我係一位資深軟件工程師，專注於設計、開發和維護複雜的手機應用程式、網站和後端伺服器。"
+    "description": "歡迎來到我的個人網站！我是一名首席軟件工程師，專注於設計、開發和維護複雜的手機應用程式、網站和後端伺服器。"
   },
   "Theme": {
     "toggle": "切換主題",
@@ -18,12 +18,12 @@
     "contact": "與我聯絡"
   },
   "HeroSection": {
-    "Hello": "您好，我係",
+    "Hello": "您好，我是",
     "softwareEngineer": "軟件工程師",
     "mobileDeveloper": "手機程式開發員",
     "webDeveloper": "網頁開發者",
     "backendDeveloper": "後端工程師",
-    "summary": "我係Raymond Lui，一位資深軟件工程師，專注於設計、開發和維護複雜的手機應用程式、網站和後端伺服器。",
+    "summary": "我是Raymond Lui，一名首席軟件工程師，專注於設計、開發和維護複雜的手機應用程式、網站和後端伺服器。",
     "hireMe": "與我聯絡",
     "downloadCV": "下載履歷"
   },
@@ -33,9 +33,9 @@
     "cantonese": "廣東話",
     "putonghua": "普通話",
     "email": "電郵",
-    "lineOne": "我係一位資深軟件工程師，有六年經驗，專注於設計、開發、測試同維護複雜嘅手機應用程式、網站同後端伺服器。我嘅專長涵蓋多個領域，特別係導航、交通同B2C電子商務平台。",
-    "lineTwo": "我擅長帶領團隊完成整個軟件開發生命週期，確保有效協調同合作，交付符合客戶期望嘅最終產品。",
-    "lineThree": "我能夠清晰地設立項目目標，管理資源，並為團隊成員提供指導，以優化生產力，實現成功嘅結果。"
+    "lineOne": "我是一名首席軟件工程師，有{yoe}年經驗，專注於設計、開發、測試同維護複雜的手機應用程式、網站同後端伺服器。我的專長涵蓋多個領域，特別是導航、交通同B2C電子商務平台。",
+    "lineTwo": "我擅長帶領團隊完成整個軟件開發生命週期，確保有效協調同合作，交付符合客戶期望的最終產品。",
+    "lineThree": "我能夠清晰地設立項目目標，管理資源，並為團隊成員提供指導，以優化生產力，實現成功的結果。"
   },
   "Footer": {
     "copyright": "© {year} / {name} / 版權所有"
@@ -43,12 +43,26 @@
   "Experiences": {
     "title": "工作經驗及學歷",
     "description": "以下是我的工作經驗和學歷",
+    "pgLead": {
+      "date": "Jan 2024 - Present",
+      "name": "Pokeguide Limited",
+      "title": "Software Engineer Lead",
+      "location": "Hong Kong SAR",
+      "description": "<ul><li>帶領一個由 5 名以上軟件工程師組成的Agile項目團隊，開發導航模塊、電子商務模塊及外部項目，確保高質量產品的交付。</li><li>與軟件工程師、設計師和產品經理合作，確保項目中的順暢溝通。</li><li>使用面向對象編程原則和合適的框架重構後端PHP代碼，大幅提高代碼的可維護性，並減少 50% 的程式錯誤。</li><li>通過 Docker 容器優化部署流程，加快了項目發布時間表。</li></ul>"
+    },
+    "pgSenior": {
+      "date": "Aug 2021 - Dec 2023",
+      "name": "Pokeguide Limited",
+      "title": "Senior Mobile App Developer",
+      "location": "Hong Kong SAR",
+      "description": "<ul><li>為 Pokeguide 開發 Flutter 應用程式。</li><li>使用 Flutter 和 React Native 開發外部的手機應用程式項目。</li><li>在 6 個月內將原本使用原生語言編寫的導航應用程式遷移到 Flutter。</li><li>開發並優化導航應用程式的導航引擎，使程式初始化速度提升 80%。</li></ul>"
+    },
     "pgFullTime": {
       "date": "2018 - 現在",
       "name": "Pokeguide Limited",
       "title": "Mobile App Developer",
       "location": "香港",
-      "description": "<ul><li>帶領一支由4位前端和後端開發人員及實習生組成的軟件開發團隊，創建導航應用程序、B2C電子商務平台，並優化後端系統，以確保代碼質量高且易於維護。</li><li>與設計和產品團隊協調，將商業概念轉化為全面的技術文件，增強跨部門溝通，加快項目交付。</li><li>持續關注行業趨勢和新興技術，以推動最佳實踐的採用，並提供尖端解決方案。</li></ul>"
+      "description": "<ul><li>為 Pokeguide 開發 Android 應用程式。</li><li>通過引入 MVVM 架構提高代碼質量，減少 40% 的調試時間。</li></ul>"
     },
     "pgIntern": {
       "date": "2017",
